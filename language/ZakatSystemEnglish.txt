@@ -1,0 +1,88 @@
+Exit
+Error !
+Error, Please put a correct value for camel !
+Error, Please put a correct value for cow !
+Error, Please put a correct value for sheep !
+Error, Please put a correct value for gold !
+Error, Please put a correct value for silver !
+Fine  
+Error, Please put a correct value for ore !
+Error, Please put a correct value for frindly Debt !
+Error, Please put a correct value for ugly Debt !
+Error, Please put a correct value for gold value !
+Error, Please put a correct value for silver Value !
+Error, Please put a correct value for business !
+Error, Please put a correct value for honey !
+Error, Please put a correct value for free Planet !
+Error, Please put a correct value for cost Planet !
+Error, Please put a correct value for horses !
+Error, Please put a correct value for the average cost of the hours !
+Zakat Quantities
+Zakat gold & Silver
+Do you have gold? If yes how much? [1 Kg = 1000 Grams]
+Yes
+No
+Grams   fineness:
+Do you have silver? If yes how much? [1 Kg = 1000 Grams]
+Yes
+No
+Grams   fineness:
+businessPanel
+Do you have business? If yes how much?
+Yes
+No
+Dirhams
+debtPanel
+Do you own somebody and he/she is frindly to pay you back? If yes how much?
+Yes
+No
+Dirhams
+Do you own somebody and he/she is ugly to pay you back? If yes how much?
+Yes
+No
+Dirhams
+otherMoneyPanel
+Do you have honey? If yes how much?
+Yes
+No
+Kgs
+Do you find ore? If yes how much?
+Yes
+No
+Dirhams
+planetPanel
+Do you have free planet? If yes how much?
+Yes
+No
+Kgs
+Do you have cost planet? If yes how much?
+Yes
+No
+Kgs
+animalsPanel
+Do you have camels? If yes how many?
+Yes
+No
+Do you have cows? If yes how many?
+Yes
+No
+Do you have sheep? If yes how many?
+Yes
+No
+Do you have horses? If yes how many?
+Yes
+No
+madahedPanel
+jumhor
+hanbali
+shafie
+maliki
+hanafi
+allScientists
+currencyValuePanel
+Gold [1 Gram]:
+Dirhams      Silver [1 Gram]:
+Dirhams
+Average cost of hours:
+Dirhams
+start calculation

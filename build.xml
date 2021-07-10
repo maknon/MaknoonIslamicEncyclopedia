@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Build" basedir="." default="win">
+
+	<property name="build.dir"				value="build"/>
+	<property name="app.name"				value="المواريث والزكاة"/>
+	<property name="tools.dir"				value="E:\Others\MIE Support programs"/>
+	<property name="makensis.exe"			value="${tools.dir}\nsis\makensis.exe"/>
+	<property name="jdk.linux"				value="openjdk-16_linux-x64_bin.tar.gz"/>
+	<property name="jdk.mac"				value="openjdk-16_osx-x64_bin.tar.gz"/>
+	<property name="jdk.win"				value="openjdk-16_windows-x64_bin.zip"/> <!-- bell-sw.com / azul.com -->
+	<!--
+	<property name="jdk.linux"				value="bellsoft-jre14.0.1+8-linux-amd64.tar.gz"/>
+	<property name="jdk.mac"				value="bellsoft-jre14.0.1+8-macos-amd64.zip"/>
+	<property name="jdk.win"				value="bellsoft-jre14.0.1+8-windows-amd64.zip"/>
+	-->
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+	</target>
+
+	<target name="compile">
+		<copy todir="${build.dir}">
+			<fileset dir="." includes="startup.sh,startup.bat,uninstall.sh,icon.png,decompress.sh,icon.ico,language/**,setup.nsi,build_pom.xml">
+				<include name="${app.name}.app/**" />
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dir}/src">
+			<fileset dir="." includes="com.maknoon/**"/>
+		</copy>
+
+		<exec dir="${build.dir}" executable="cmd" failonerror="true" >
+			<arg value="/c mvn -f build_pom.xml dependency:copy-dependencies -DoutputDirectory=lib -Dhttps.protocols=TLSv1.2"/>
+		</exec>
+
+		<path id="class.path">
+			<fileset dir="${build.dir}" includes="lib/*"/>
+		</path>
+
+		<mkdir dir="${build.dir}/mods"/>
+
+		<javac
+				includeantruntime="false"
+				destdir="${build.dir}/mods"
+				modulepath="${build.dir}/lib"
+				modulesourcepath="${build.dir}/src"
+				encoding="UTF-8">
+		</javac>
+	</target>
+
+	<target name="compile_min">
+		<copy todir="${build.dir}">
+			<fileset dir="." includes="language/**"/>
+		</copy>
+
+		<copy todir="${build.dir}/src" encoding="UTF-8">
+			<fileset dir="." includes="com.maknoon/**"/>
+			<filterset begintoken="//[" endtoken="]">
+				<filter token="ifJar" value="/*"/>
+				<filter token="endJar" value="*/"/>
+				<filter token="sysLnF" value="try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
+				catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e) { e.printStackTrace(); }"/>
+			</filterset>
+			<filterchain>
+				<tokenfilter>
+					<replacestring from="requires com.formdev" to="//requires com.formdev"/>
+				</tokenfilter>
+			</filterchain>
+		</copy>
+
+		<mkdir dir="${build.dir}/mods"/>
+
+		<javac
+				includeantruntime="false"
+				destdir="${build.dir}/mods"
+				modulepath="${build.dir}/lib"
+				modulesourcepath="${build.dir}/src"
+				encoding="UTF-8"
+				source="9"
+				target="9">
+		</javac>
+	</target>
+
+	<path id="build-classpath">
+		<fileset dir="${build.dir}/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="jar_min">
+		<jar destfile="${build.dir}/MaknoonIslamicEncyclopedia.jar"
+			 basedir="${build.dir}/mods/com.maknoon">
+			<manifest>
+				<attribute name="Main-Class" value="com.maknoon.MaknoonIslamicEncyclopedia"/>
+			</manifest>
+			<fileset dir="${build.dir}" includes="language/**" />
+			<fileset dir="${build.dir}" includes="com/**" />
+		</jar>
+	</target>
+
+	<target name="jdk_win">
+		<link destDir="${build.dir}/jdk"
+			  modulepath="${build.dir}/mods;${build.dir}/lib"
+			  modules="com.maknoon"
+			  includeHeaders="false"
+			  includeManPages="false"/>
+	</target>
+
+	<target name="jdk_linux">
+		<untar src="${tools.dir}/${jdk.linux}" dest="${build.dir}/jdk_linux" compression="gzip">
+			<cutdirsmapper dirs="1" />
+		</untar>
+
+		<link destDir="${build.dir}/jdk"
+			  modulepath="${build.dir}/mods;${build.dir}/lib;${build.dir}/jdk_linux/jmods"
+			  modules="com.maknoon"
+			  includeHeaders="false"
+			  includeManPages="false"/>
+	</target>
+
+	<target name="jdk_mac">
+		<!-- for bell-sw jre binaries -> tar.gz
+		<untar src="${tools.dir}/${jdk.mac}" dest="${build.dir}/${app.name}.app/Contents/PlugIns/jdk" compression="gzip">
+			<cutdirsmapper dirs="1" />
+		</untar>
+
+		OR -> zip
+
+		<unzip src="${tools.dir}/${jdk.mac}" dest="${build.dir}/${app.name}.app/Contents/PlugIns/jdk">
+			<cutdirsmapper dirs="1" />
+		</unzip>
+		-->
+
+		<!-- for Oracle binaries -->
+		<untar src="${tools.dir}/${jdk.mac}" dest="${build.dir}/jdk_mac" compression="gzip">
+			<cutdirsmapper dirs="4" />
+		</untar>
+
+		<link destDir="${build.dir}/jdk"
+			  modulepath="${build.dir}/mods;${build.dir}/lib;${build.dir}/jdk_mac/jmods"
+			  modules="com.maknoon"
+			  includeHeaders="false"
+			  includeManPages="false"/>
+
+		<move file="${build.dir}/jdk" tofile="${build.dir}/${app.name}.app/Contents/PlugIns/jdk"/>
+		<move file="${build.dir}/mods" tofile="${build.dir}/${app.name}.app/Contents/Java/mods"/>
+		<move file="${build.dir}/language" tofile="${build.dir}/${app.name}.app/Contents/Java/language"/>
+		<move file="${build.dir}/lib" tofile="${build.dir}/${app.name}.app/Contents/Java/lib"/>
+	</target>
+
+	<target name="nsis">
+		<exec dir="${build.dir}" executable="${makensis.exe}" failonerror="true" >
+			<arg value="setup.nsi"/>
+		</exec>
+	</target>
+
+	<target name="tar_gz">
+		<tar destfile="${build.dir}/payload.tar.gz" compression="gzip">
+			<tarfileset dir="${build.dir}" includes="startup.sh,uninstall.sh,icon.png,
+			language/**,mods/**,jdk/**,lib/**"/>
+		</tar>
+		<concat destfile="${build.dir}/MaknoonIslamicEncyclopediaVMx64.sh" binary="yes">
+			<fileset file="${build.dir}/decompress.sh" />
+			<fileset file="${build.dir}/payload.tar.gz" />
+		</concat>
+	</target>
+
+	<target name="tar_gz_mac">
+		<tar destfile="${build.dir}/MaknoonIslamicEncyclopediaMacOS.tar.gz" compression="gzip">
+			<tarfileset filemode="755" dir="${build.dir}">
+				<include name="${app.name}.app/**"/>
+			</tarfileset>
+		</tar>
+	</target>
+
+	<target name="win" depends="clean,compile,jdk_win,nsis"/>
+	<target name="linux" depends="clean,compile,jdk_linux,tar_gz"/>
+	<target name="mac" depends="clean,compile,jdk_mac,tar_gz_mac"/>
+	<target name="min_jar" depends="clean,compile_min,jar_min"/>
+
+</project>

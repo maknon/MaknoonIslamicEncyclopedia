@@ -1,0 +1,8 @@
+Setting
+Choose the language to be used in the program
+العربية
+English
+Cancel
+Apply
+New versions
+Search for new versions at startup

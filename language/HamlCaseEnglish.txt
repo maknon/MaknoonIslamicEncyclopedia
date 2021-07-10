@@ -1,0 +1,18 @@
+Son Or Daughter i.e. his wife is pregnant?
+GrandSon Or GrandDaughter i.e. his son's wife is pregnant?
+Son of GrandSon Or Daughter of GrandSon i.e. his GrandSon's wife is pregnant?
+Brother Or Sister i.e. his mother is pregnant?
+Maternal Brother Or Maternal Sister i.e. his mother is pregnant from other hausband?
+Paternal Brother Or Paternal Sister i.e. his father's wife (not his mother) is pregnant?
+Son of Full Brother i.e. his Full Brother's wife is pregnant?
+Son of Paternal Brother i.e. his Paternal Brother's wife is pregnant?
+Father's Full Brother i.e. his GrandFather's wife (GrandMother) is pregnant?
+Paternal Uncle i.e. his GrandFather's wife (Not his GrandMother) is pregnant?
+Son of Father's Full Brother i.e. his Father's Full Brother wife is pregnant?
+Son of Paternal Uncle i.e. his Paternal Uncle's wife is pregnant?
+What is the relation between the deceased and the unborn child?
+Enter
+You didn't select anything, Please select one.
+Warning
+Yes
+Haml Relation

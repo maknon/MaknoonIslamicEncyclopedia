@@ -1,0 +1,132 @@
+Results
+For golds
+goldRequired
+ Grams
+goldZakatRequired
+No Zakat on gold
+They are less than the required
+For silver
+silverRequired
+ Grams
+silverZakatRequired
+No Zakat on silver
+They are less than the required
+Type of zakat
+Amount of zakat
+Notes
+The input amount
+Print
+For ore
+oreRequired
+For busniess
+businessRequired
+busniessZakatRequired
+No Zakat on business
+They are less than the required
+For hanbali madhab only
+summation part of gold,silver and business is > nessab
+with the best for poor
+goldRequiredPart
+ Grams
+silverRequiredPart
+ Grams
+businessRequiredPart
+For honey
+honeyRequired
+honeyZakatRequired
+No Zakat on honey
+They are less than the required
+honeyZakatRequired
+No Zakat on honey
+Only applied on hanbaly and hanafi madhabs
+For free planet
+freePlanetRequired
+freePlanetZakatRequired
+No Zakat on free Planet
+They are less than the required (653 Kg)
+For cost planet
+costPlanetRequired
+costPlanetZakatRequired
+No Zakat on cost Planet
+They are less than the required (653 Kg)
+For frindly debt
+frindlyDebtRequired
+applied when recieving the debt
+frindlyDebtRequired
+applied directly before recieving the debt
+frindlyDebtZakatRequired
+No Zakat on frindly debt
+They are less than the required
+For ugly debt
+uglyDebtRequired
+applied when recieving the debt
+uglyDebtRequired
+applied directly before recieving the debt
+uglyDebtZakatRequired
+No Zakat on ugly debt
+They are less than the required
+For camels
+camelZakatRequired
+No Zakat on camels
+They are less than the required
+camelShaahRequired
+camelBintLaboonRequired
+camelBinLaboonRequired
+camelBintMakhadRequired
+camelHuqaRequired
+camelJadahRequired
+For cows
+cowZakatRequired
+No Zakat on cows
+They are less than the required
+cowTabeeaOrTabeeahRequired
+cowMassunahRequired
+For sheeps
+sheepZakatRequired
+No Zakat on sheep
+They are less than the required
+sheepRequired
+For horses
+hoursMoneyRequired [in Dirhams]
+No Zakat on horses
+They are less than the required
+hoursMoneyRequired [in Dirhams]
+There is no zakat on your money
+There are no entered entities to be calculated.
+In Malik madhab 'Al Soum' is not required
+Zakat calculation under Jumhor madhab
+Zakat calculation under hanbali madhab
+Zakat calculation under shafie madhab
+Zakat calculation under maliki madhab
+Zakat calculation under hanafi madhab
+Cattle:
+Camel
+Cow
+Sheep
+Horses
+Gold
+Silver
+Fine
+Monetary and others:
+ Dirham
+Jaahiliyyah treasure
+Repayable debt
+Non repayable debt
+hoarded and Trade funds
+Crops and Honey
+Cereals without Irrigation
+ KG
+Cereals (Irrigation)
+Honey
+Caliber:
+Quorum of gold is 85 and it's Zakat is 1/40
+Quorum of silver is 595 and it's Zakat is 1/40
+Quorum of funds is the value of the quorum of gold and it's Zakat is 1/40
+Quorum of funds is the least value of either the quorum of gold or silver and it's Zakat is 1/40
+You don't have the required quorum of funds (least value of either the quorum of gold or silver). No Zakat
+Jaahiliyyah treasure Zakat is 1/5
+Quorum of honey is 62 KG and it's Zakah is 1/10
+Honey Zakah is 1/10
+Quorum of Cereals is 653 KG and it's Zakat is 1/10
+Quorum of this type of Cereals is 653 KG and it's Zakat is 1/20
+Your debt is not reaching the required quorum (least value of either the quorum of gold or silver). No Zakat
