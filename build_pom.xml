@@ -13,7 +13,7 @@
 		<dependency>
 			<groupId>com.formdev</groupId>
 			<artifactId>flatlaf</artifactId>
-			<version>1.3</version>
+			<version>1.5</version>
 		</dependency>
 	</dependencies>
 
