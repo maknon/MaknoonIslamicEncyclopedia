@@ -1,3 +1,3 @@
-REM set JAVA_HOME=E:\Others\MIE Support programs\jdk-16
+REM set JAVA_HOME=E:\Support\jdk-17
 call ant
 pause

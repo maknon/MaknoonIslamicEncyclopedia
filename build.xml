@@ -3,11 +3,11 @@
 
 	<property name="build.dir"				value="build"/>
 	<property name="app.name"				value="المواريث والزكاة"/>
-	<property name="tools.dir"				value="E:\Others\MIE Support programs"/>
+	<property name="tools.dir"				value="E:\Support"/>
 	<property name="makensis.exe"			value="${tools.dir}\nsis\makensis.exe"/>
-	<property name="jdk.linux"				value="openjdk-16_linux-x64_bin.tar.gz"/>
-	<property name="jdk.mac"				value="openjdk-16_osx-x64_bin.tar.gz"/>
-	<property name="jdk.win"				value="openjdk-16_windows-x64_bin.zip"/> <!-- bell-sw.com / azul.com -->
+	<property name="jdk.linux"				value="openjdk-17_linux-x64_bin.tar.gz"/>
+	<property name="jdk.mac"				value="openjdk-17_macos-x64_bin.tar.gz"/>
+	<property name="jdk.win"				value="openjdk-17_windows-x64_bin.zip"/> <!-- bell-sw.com / azul.com -->
 	<!--
 	<property name="jdk.linux"				value="bellsoft-jre14.0.1+8-linux-amd64.tar.gz"/>
 	<property name="jdk.mac"				value="bellsoft-jre14.0.1+8-macos-amd64.zip"/>
