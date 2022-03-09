@@ -1542,7 +1542,7 @@ class MawarethSystem extends JDesktopPane
 					{
 						inheritorsCalculation();
 
-						// Decrease the counter [layer] since we are only interesting in calculating the inheritance of the s_s, d_s(or s_d, d_d) of the deceased son (from the 2nd round)
+						// Decrease the counter [layer] since we are only interested in calculating the inheritance of the s_s, d_s(or s_d, d_d) of the deceased son (from the 2nd round)
 						cnt--;
 
 						// Version 2.4, m[] / f[] is added
@@ -7382,7 +7382,7 @@ class MawarethSystem extends JDesktopPane
 					 * Version 1.1
 					 * For each condition here there are some improvements such as:
 					 *
-					 * 1. Instead of displaying the whole tarekah we round it to 3 presecion using round() function.
+					 * 1. Instead of displaying the whole tarekah we round it to 3 precision using round() function.
 					 * 2. Not displaying moqof if it is zero using y==2?(mowqof[0]=="0/1"?"":mowqof[0])):""
 					 *
 					 * Version 1.3
@@ -7398,213 +7398,213 @@ class MawarethSystem extends JDesktopPane
 
 					if (!h[y].equals("0/1") || (y == cnt && getNumerator(mowqof[0]) != 0 && h[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[93], h[y].equals("0/1") ? ("0/" + LCDDenominator) : h[y], String.valueOf(h_num[y]), String.valueOf(round(tarekahMultiply(h[y], tarekah))), y == cnt ? (mowqof[0].equals("0/1") ? "" : mowqof[0]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[93], h[y].equals("0/1") ? ("0/" + LCDDenominator) : h[y], String.valueOf(h_num[y]), round(tarekahMultiply(h[y], tarekah)), y == cnt ? (mowqof[0].equals("0/1") ? "" : mowqof[0]) : ""));
 						noteVector.add(h_note[y]);
 					}
 
 					if (!w[y].equals("0/1") || (y == cnt && getNumerator(mowqof[1]) != 0 && w[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[94], w[y].equals("0/1") ? ("0/" + LCDDenominator) : w[y], String.valueOf(w_num[y]), String.valueOf(round(tarekahMultiply(w[y], tarekah))), y == cnt ? (mowqof[1].equals("0/1") ? "" : mowqof[1]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[94], w[y].equals("0/1") ? ("0/" + LCDDenominator) : w[y], String.valueOf(w_num[y]), round(tarekahMultiply(w[y], tarekah)), y == cnt ? (mowqof[1].equals("0/1") ? "" : mowqof[1]) : ""));
 						noteVector.add(w_note[y]);
 					}
 
 					if (!f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[2]) != 0 && f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[95], f[y].equals("0/1") ? ("0/" + LCDDenominator) : f[y], String.valueOf(f_num[y]), String.valueOf(round(tarekahMultiply(f[y], tarekah))), y == cnt ? (mowqof[2].equals("0/1") ? "" : mowqof[2]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[95], f[y].equals("0/1") ? ("0/" + LCDDenominator) : f[y], String.valueOf(f_num[y]), round(tarekahMultiply(f[y], tarekah)), y == cnt ? (mowqof[2].equals("0/1") ? "" : mowqof[2]) : ""));
 						noteVector.add(f_note[y]);
 					}
 
 					if (!f_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[3]) != 0 && f_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[96], f_f[y].equals("0/1") ? ("0/" + LCDDenominator) : f_f[y], String.valueOf(f_f_num[y]), String.valueOf(round(tarekahMultiply(f_f[y], tarekah))), y == cnt ? (mowqof[3].equals("0/1") ? "" : mowqof[3]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[96], f_f[y].equals("0/1") ? ("0/" + LCDDenominator) : f_f[y], String.valueOf(f_f_num[y]), round(tarekahMultiply(f_f[y], tarekah)), y == cnt ? (mowqof[3].equals("0/1") ? "" : mowqof[3]) : ""));
 						noteVector.add(f_f_note[y]);
 					}
 					if (!m[y].equals("0/1") || (y == cnt && getNumerator(mowqof[4]) != 0 && m[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[97], m[y].equals("0/1") ? ("0/" + LCDDenominator) : m[y], String.valueOf(m_num[y]), String.valueOf(round(tarekahMultiply(m[y], tarekah))), y == cnt ? (mowqof[4].equals("0/1") ? "" : mowqof[4]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[97], m[y].equals("0/1") ? ("0/" + LCDDenominator) : m[y], String.valueOf(m_num[y]), round(tarekahMultiply(m[y], tarekah)), y == cnt ? (mowqof[4].equals("0/1") ? "" : mowqof[4]) : ""));
 						noteVector.add(m_note[y]);
 					}
 
 					if (!m_m[y].equals("0/1") || (y == cnt && getNumerator(mowqof[5]) != 0 && m_m[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[98], m_m[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m[y], String.valueOf(m_m_num[y]), String.valueOf(round(tarekahMultiply(m_m[y], tarekah))), y == cnt ? (mowqof[5].equals("0/1") ? "" : mowqof[5]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[98], m_m[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m[y], String.valueOf(m_m_num[y]), round(tarekahMultiply(m_m[y], tarekah)), y == cnt ? (mowqof[5].equals("0/1") ? "" : mowqof[5]) : ""));
 						noteVector.add(m_m_note[y]);
 					}
 
 					if (!m_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[6]) != 0 && m_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[99], m_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_f[y], String.valueOf(m_f_num[y]), String.valueOf(round(tarekahMultiply(m_f[y], tarekah))), y == cnt ? (mowqof[6].equals("0/1") ? "" : mowqof[6]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[99], m_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_f[y], String.valueOf(m_f_num[y]), round(tarekahMultiply(m_f[y], tarekah)), y == cnt ? (mowqof[6].equals("0/1") ? "" : mowqof[6]) : ""));
 						noteVector.add(m_f_note[y]);
 					}
 
 					if (!m_m_m[y].equals("0/1") || (y == cnt && getNumerator(mowqof[7]) != 0 && m_m_m[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[100], m_m_m[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m_m[y], String.valueOf(m_m_m_num[y]), String.valueOf(round(tarekahMultiply(m_m_m[y], tarekah))), y == cnt ? (mowqof[7].equals("0/1") ? "" : mowqof[7]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[100], m_m_m[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m_m[y], String.valueOf(m_m_m_num[y]), round(tarekahMultiply(m_m_m[y], tarekah)), y == cnt ? (mowqof[7].equals("0/1") ? "" : mowqof[7]) : ""));
 						noteVector.add(m_m_m_note[y]);
 					}
 
 					if (!m_m_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[8]) != 0 && m_m_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[101], m_m_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m_f[y], String.valueOf(m_m_f_num[y]), String.valueOf(round(tarekahMultiply(m_m_f[y], tarekah))), y == cnt ? (mowqof[8].equals("0/1") ? "" : mowqof[8]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[101], m_m_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_m_f[y], String.valueOf(m_m_f_num[y]), round(tarekahMultiply(m_m_f[y], tarekah)), y == cnt ? (mowqof[8].equals("0/1") ? "" : mowqof[8]) : ""));
 						noteVector.add(m_m_f_note[y]);
 					}
 
 					if (!m_f_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[9]) != 0 && m_f_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[102], m_f_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_f_f[y], String.valueOf(m_f_f_num[y]), String.valueOf(round(tarekahMultiply(m_f_f[y], tarekah))), y == cnt ? (mowqof[9].equals("0/1") ? "" : mowqof[9]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[102], m_f_f[y].equals("0/1") ? ("0/" + LCDDenominator) : m_f_f[y], String.valueOf(m_f_f_num[y]), round(tarekahMultiply(m_f_f[y], tarekah)), y == cnt ? (mowqof[9].equals("0/1") ? "" : mowqof[9]) : ""));
 						noteVector.add(m_f_f_note[y]);
 					}
 
 					if (!s[y].equals("0/1") || (y == cnt && getNumerator(mowqof[10]) != 0 && s[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[103], s[y].equals("0/1") ? ("0/" + LCDDenominator) : s[y], String.valueOf(s_num[y]), String.valueOf(round(tarekahMultiply(s[y], tarekah))), y == cnt ? (mowqof[10].equals("0/1") ? "" : mowqof[10]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[103], s[y].equals("0/1") ? ("0/" + LCDDenominator) : s[y], String.valueOf(s_num[y]), round(tarekahMultiply(s[y], tarekah)), y == cnt ? (mowqof[10].equals("0/1") ? "" : mowqof[10]) : ""));
 						noteVector.add(s_note[y]);
 					}
 
 					if ((!d[y].equals("0/1") /* Version 1.9, Removed '&& /* Version 1.6 * / !(willsCaseSelected && d_num[y]==0)'*/) || (y == cnt && getNumerator(mowqof[11]) != 0 && d[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[104], d[y].equals("0/1") ? ("0/" + LCDDenominator) : d[y], String.valueOf(d_num[y]), String.valueOf(round(tarekahMultiply(d[y], tarekah))), y == cnt ? (mowqof[11].equals("0/1") ? "" : mowqof[11]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[104], d[y].equals("0/1") ? ("0/" + LCDDenominator) : d[y], String.valueOf(d_num[y]), round(tarekahMultiply(d[y], tarekah)), y == cnt ? (mowqof[11].equals("0/1") ? "" : mowqof[11]) : ""));
 						noteVector.add(d_note[y]);
 					}
 
 					if (!s_s[y].equals("0/1") || (y == cnt && getNumerator(mowqof[12]) != 0 && s_s[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[105], s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : s_s[y], String.valueOf(s_s_num[y]), String.valueOf(round(tarekahMultiply(s_s[y], tarekah))), y == cnt ? (mowqof[12].equals("0/1") ? "" : mowqof[12]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[105], s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : s_s[y], String.valueOf(s_s_num[y]), round(tarekahMultiply(s_s[y], tarekah)), y == cnt ? (mowqof[12].equals("0/1") ? "" : mowqof[12]) : ""));
 						noteVector.add(s_s_note[y]);
 					}
 
 					if (!d_s[y].equals("0/1") || (y == cnt && getNumerator(mowqof[13]) != 0 && d_s[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[106], d_s[y].equals("0/1") ? ("0/" + LCDDenominator) : d_s[y], String.valueOf(d_s_num[y]), String.valueOf(round(tarekahMultiply(d_s[y], tarekah))), y == cnt ? (mowqof[13].equals("0/1") ? "" : mowqof[13]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[106], d_s[y].equals("0/1") ? ("0/" + LCDDenominator) : d_s[y], String.valueOf(d_s_num[y]), round(tarekahMultiply(d_s[y], tarekah)), y == cnt ? (mowqof[13].equals("0/1") ? "" : mowqof[13]) : ""));
 						noteVector.add(d_s_note[y]);
 					}
 
 					if (!s_s_s[y].equals("0/1") || (y == cnt && getNumerator(mowqof[14]) != 0 && s_s_s[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[107], s_s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : s_s_s[y], String.valueOf(s_s_s_num[y]), String.valueOf(round(tarekahMultiply(s_s_s[y], tarekah))), y == cnt ? (mowqof[14].equals("0/1") ? "" : mowqof[14]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[107], s_s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : s_s_s[y], String.valueOf(s_s_s_num[y]), round(tarekahMultiply(s_s_s[y], tarekah)), y == cnt ? (mowqof[14].equals("0/1") ? "" : mowqof[14]) : ""));
 						noteVector.add(s_s_s_note[y]);
 					}
 
 					if (!d_s_s[y].equals("0/1") || (y == cnt && getNumerator(mowqof[15]) != 0 && d_s_s[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[108], d_s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : d_s_s[y], String.valueOf(d_s_s_num[y]), String.valueOf(round(tarekahMultiply(d_s_s[y], tarekah))), y == cnt ? (mowqof[15].equals("0/1") ? "" : mowqof[15]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[108], d_s_s[y].equals("0/1") ? ("0/" + LCDDenominator) : d_s_s[y], String.valueOf(d_s_s_num[y]), round(tarekahMultiply(d_s_s[y], tarekah)), y == cnt ? (mowqof[15].equals("0/1") ? "" : mowqof[15]) : ""));
 						noteVector.add(d_s_s_note[y]);
 					}
 
 					if (!b[y].equals("0/1") || (y == cnt && getNumerator(mowqof[16]) != 0 && b[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[109], b[y].equals("0/1") ? ("0/" + LCDDenominator) : b[y], String.valueOf(b_num[y]), String.valueOf(round(tarekahMultiply(b[y], tarekah))), y == cnt ? (mowqof[16].equals("0/1") ? "" : mowqof[16]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[109], b[y].equals("0/1") ? ("0/" + LCDDenominator) : b[y], String.valueOf(b_num[y]), round(tarekahMultiply(b[y], tarekah)), y == cnt ? (mowqof[16].equals("0/1") ? "" : mowqof[16]) : ""));
 						noteVector.add(b_note[y]);
 					}
 
 					if (!sister[y].equals("0/1") || (y == cnt && getNumerator(mowqof[17]) != 0 && sister[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[110], sister[y].equals("0/1") ? ("0/" + LCDDenominator) : sister[y], String.valueOf(sister_num[y]), String.valueOf(round(tarekahMultiply(sister[y], tarekah))), y == cnt ? (mowqof[17].equals("0/1") ? "" : mowqof[17]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[110], sister[y].equals("0/1") ? ("0/" + LCDDenominator) : sister[y], String.valueOf(sister_num[y]), round(tarekahMultiply(sister[y], tarekah)), y == cnt ? (mowqof[17].equals("0/1") ? "" : mowqof[17]) : ""));
 						noteVector.add(sister_note[y]);
 					}
 
 					if (!m_b[y].equals("0/1") || (y == cnt && getNumerator(mowqof[18]) != 0 && m_b[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[111], m_b[y].equals("0/1") ? ("0/" + LCDDenominator) : m_b[y], String.valueOf(m_b_num[y]), String.valueOf(round(tarekahMultiply(m_b[y], tarekah))), y == cnt ? (mowqof[18].equals("0/1") ? "" : mowqof[18]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[111], m_b[y].equals("0/1") ? ("0/" + LCDDenominator) : m_b[y], String.valueOf(m_b_num[y]), round(tarekahMultiply(m_b[y], tarekah)), y == cnt ? (mowqof[18].equals("0/1") ? "" : mowqof[18]) : ""));
 						noteVector.add(m_b_note[y]);
 					}
 
 					if (!m_sister[y].equals("0/1") || (y == cnt && getNumerator(mowqof[19]) != 0 && m_sister[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[112], m_sister[y].equals("0/1") ? ("0/" + LCDDenominator) : m_sister[y], String.valueOf(m_sister_num[y]), String.valueOf(round(tarekahMultiply(m_sister[y], tarekah))), y == cnt ? (mowqof[19].equals("0/1") ? "" : mowqof[19]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[112], m_sister[y].equals("0/1") ? ("0/" + LCDDenominator) : m_sister[y], String.valueOf(m_sister_num[y]), round(tarekahMultiply(m_sister[y], tarekah)), y == cnt ? (mowqof[19].equals("0/1") ? "" : mowqof[19]) : ""));
 						noteVector.add(m_sister_note[y]);
 					}
 
 					if (!f_b[y].equals("0/1") || (y == cnt && getNumerator(mowqof[20]) != 0 && f_b[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[113], f_b[y].equals("0/1") ? ("0/" + LCDDenominator) : f_b[y], String.valueOf(f_b_num[y]), String.valueOf(round(tarekahMultiply(f_b[y], tarekah))), y == cnt ? (mowqof[20].equals("0/1") ? "" : mowqof[20]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[113], f_b[y].equals("0/1") ? ("0/" + LCDDenominator) : f_b[y], String.valueOf(f_b_num[y]), round(tarekahMultiply(f_b[y], tarekah)), y == cnt ? (mowqof[20].equals("0/1") ? "" : mowqof[20]) : ""));
 						noteVector.add(f_b_note[y]);
 					}
 
 					if (!f_sister[y].equals("0/1") || (y == cnt && getNumerator(mowqof[21]) != 0 && f_sister[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[114], f_sister[y].equals("0/1") ? ("0/" + LCDDenominator) : f_sister[y], String.valueOf(f_sister_num[y]), String.valueOf(round(tarekahMultiply(f_sister[y], tarekah))), y == cnt ? (mowqof[21].equals("0/1") ? "" : mowqof[21]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[114], f_sister[y].equals("0/1") ? ("0/" + LCDDenominator) : f_sister[y], String.valueOf(f_sister_num[y]), round(tarekahMultiply(f_sister[y], tarekah)), y == cnt ? (mowqof[21].equals("0/1") ? "" : mowqof[21]) : ""));
 						noteVector.add(f_sister_note[y]);
 					}
 
 					if (!s_b[y].equals("0/1") || (y == cnt && getNumerator(mowqof[22]) != 0 && s_b[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[115], s_b[y].equals("0/1") ? ("0/" + LCDDenominator) : s_b[y], String.valueOf(s_b_num[y]), String.valueOf(round(tarekahMultiply(s_b[y], tarekah))), y == cnt ? (mowqof[22].equals("0/1") ? "" : mowqof[22]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[115], s_b[y].equals("0/1") ? ("0/" + LCDDenominator) : s_b[y], String.valueOf(s_b_num[y]), round(tarekahMultiply(s_b[y], tarekah)), y == cnt ? (mowqof[22].equals("0/1") ? "" : mowqof[22]) : ""));
 						noteVector.add(s_b_note[y]);
 					}
 
 					if (!s_b_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[23]) != 0 && s_b_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[116], s_b_f[y].equals("0/1") ? ("0/" + LCDDenominator) : s_b_f[y], String.valueOf(s_b_f_num[y]), String.valueOf(round(tarekahMultiply(s_b_f[y], tarekah))), y == cnt ? (mowqof[23].equals("0/1") ? "" : mowqof[23]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[116], s_b_f[y].equals("0/1") ? ("0/" + LCDDenominator) : s_b_f[y], String.valueOf(s_b_f_num[y]), round(tarekahMultiply(s_b_f[y], tarekah)), y == cnt ? (mowqof[23].equals("0/1") ? "" : mowqof[23]) : ""));
 						noteVector.add(s_b_f_note[y]);
 					}
 
 					if (!u[y].equals("0/1") || (y == cnt && getNumerator(mowqof[24]) != 0 && u[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[117], u[y].equals("0/1") ? ("0/" + LCDDenominator) : u[y], String.valueOf(u_num[y]), String.valueOf(round(tarekahMultiply(u[y], tarekah))), y == cnt ? (mowqof[24].equals("0/1") ? "" : mowqof[24]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[117], u[y].equals("0/1") ? ("0/" + LCDDenominator) : u[y], String.valueOf(u_num[y]), round(tarekahMultiply(u[y], tarekah)), y == cnt ? (mowqof[24].equals("0/1") ? "" : mowqof[24]) : ""));
 						noteVector.add(u_note[y]);
 					}
 
 					if (!u_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[25]) != 0 && u_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[118], u_f[y].equals("0/1") ? ("0/" + LCDDenominator) : u_f[y], String.valueOf(u_f_num[y]), String.valueOf(round(tarekahMultiply(u_f[y], tarekah))), y == cnt ? (mowqof[25].equals("0/1") ? "" : mowqof[25]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[118], u_f[y].equals("0/1") ? ("0/" + LCDDenominator) : u_f[y], String.valueOf(u_f_num[y]), round(tarekahMultiply(u_f[y], tarekah)), y == cnt ? (mowqof[25].equals("0/1") ? "" : mowqof[25]) : ""));
 						noteVector.add(u_f_note[y]);
 					}
 
 					if (!s_u[y].equals("0/1") || (y == cnt && getNumerator(mowqof[26]) != 0 && s_u[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[119], s_u[y].equals("0/1") ? ("0/" + LCDDenominator) : s_u[y], String.valueOf(s_u_num[y]), String.valueOf(round(tarekahMultiply(s_u[y], tarekah))), y == cnt ? (mowqof[26].equals("0/1") ? "" : mowqof[26]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[119], s_u[y].equals("0/1") ? ("0/" + LCDDenominator) : s_u[y], String.valueOf(s_u_num[y]), round(tarekahMultiply(s_u[y], tarekah)), y == cnt ? (mowqof[26].equals("0/1") ? "" : mowqof[26]) : ""));
 						noteVector.add(s_u_note[y]);
 					}
 
 					if (!s_u_f[y].equals("0/1") || (y == cnt && getNumerator(mowqof[27]) != 0 && s_u_f[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[120], s_u_f[y].equals("0/1") ? ("0/" + LCDDenominator) : s_u_f[y], String.valueOf(s_u_f_num[y]), String.valueOf(round(tarekahMultiply(s_u_f[y], tarekah))), y == cnt ? (mowqof[27].equals("0/1") ? "" : mowqof[27]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[120], s_u_f[y].equals("0/1") ? ("0/" + LCDDenominator) : s_u_f[y], String.valueOf(s_u_f_num[y]), round(tarekahMultiply(s_u_f[y], tarekah)), y == cnt ? (mowqof[27].equals("0/1") ? "" : mowqof[27]) : ""));
 						noteVector.add(s_u_f_note[y]);
 					}
 
 					if (!khontha[y].equals("0/1") || (y == cnt && getNumerator(mowqof[28]) != 0 && khontha[y].equals("0/1")))
-						resultsDataVector.addElement(new ResultsData(translations[121], khontha[y].equals("0/1") ? ("0/" + LCDDenominator) : khontha[y], "1", String.valueOf(round(tarekahMultiply(khontha[y], tarekah))), y == cnt ? (mowqof[28].equals("0/1") ? "" : mowqof[28]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[121], khontha[y].equals("0/1") ? ("0/" + LCDDenominator) : khontha[y], "1", round(tarekahMultiply(khontha[y], tarekah)), y == cnt ? (mowqof[28].equals("0/1") ? "" : mowqof[28]) : ""));
 					if (!missing[y].equals("0/1") || (y == cnt && getNumerator(mowqof[29]) != 0 && missing[y].equals("0/1")))
-						resultsDataVector.addElement(new ResultsData(translations[122], missing[y].equals("0/1") ? ("0/" + LCDDenominator) : missing[y], "1", String.valueOf(round(tarekahMultiply(missing[y], tarekah))), y == cnt ? (mowqof[29].equals("0/1") ? "" : mowqof[29]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[122], missing[y].equals("0/1") ? ("0/" + LCDDenominator) : missing[y], "1", round(tarekahMultiply(missing[y], tarekah)), y == cnt ? (mowqof[29].equals("0/1") ? "" : mowqof[29]) : ""));
 					if (!haml[y].equals("0/1") || (y == cnt && getNumerator(mowqof[30]) != 0 && haml[y].equals("0/1")))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[123], haml[y].equals("0/1") ? ("0/" + LCDDenominator) : haml[y], /* Cannot be 1 since in SHAFEE it might be 2 */"", String.valueOf(round(tarekahMultiply(haml[y], tarekah))), y == cnt ? (mowqof[30].equals("0/1") ? "" : mowqof[30]) : ""));
+						resultsDataVector.addElement(new ResultsData(translations[123], haml[y].equals("0/1") ? ("0/" + LCDDenominator) : haml[y], /* Cannot be 1 since in SHAFEE it might be 2 */"", round(tarekahMultiply(haml[y], tarekah)), y == cnt ? (mowqof[30].equals("0/1") ? "" : mowqof[30]) : ""));
 						noteVector.add(haml_note[y]);
 					}
 
 					// Version 1.5, remove mowqof[30] for bondman!
 					if (!bondman[y].equals("0/1"))
-						resultsDataVector.addElement(new ResultsData(translations[26], bondman[y], "1", String.valueOf(round(tarekahMultiply(bondman[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[26], bondman[y], "1", round(tarekahMultiply(bondman[y], tarekah)), ""));
 					if (!muslim_trusts[y].equals("0/1"))
-						resultsDataVector.addElement(new ResultsData(translations[124], muslim_trusts[y], ""/* Version 1.7, Removed '1'*/, String.valueOf(round(tarekahMultiply(muslim_trusts[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[124], muslim_trusts[y], ""/* Version 1.7, Removed '1'*/, round(tarekahMultiply(muslim_trusts[y], tarekah)), ""));
 
 					if (willsMaleSex)
 					{
 						// Version 1.6
 						if (!w_s_s.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[213], w_s_s, String.valueOf(w_s_s_num), String.valueOf(round(tarekahMultiply(w_s_s, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[213], w_s_s, String.valueOf(w_s_s_num), round(tarekahMultiply(w_s_s, tarekah)), ""));
 						if (!w_d_s.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[214], w_d_s, String.valueOf(w_d_s_num), String.valueOf(round(tarekahMultiply(w_d_s, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[214], w_d_s, String.valueOf(w_d_s_num), round(tarekahMultiply(w_d_s, tarekah)), ""));
 
 						// Version 2.4
 						if (!w_f.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[236], w_f, String.valueOf(w_f_num), String.valueOf(round(tarekahMultiply(w_f, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[236], w_f, String.valueOf(w_f_num), round(tarekahMultiply(w_f, tarekah)), ""));
 						if (!w_m.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[235], w_m, String.valueOf(w_m_num), String.valueOf(round(tarekahMultiply(w_m, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[235], w_m, String.valueOf(w_m_num), round(tarekahMultiply(w_m, tarekah)), ""));
 					}
 					else // Version 1.9
 					{
 						if (!w_s_d.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[229], w_s_d, String.valueOf(w_s_d_num), String.valueOf(round(tarekahMultiply(w_s_d, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[229], w_s_d, String.valueOf(w_s_d_num), round(tarekahMultiply(w_s_d, tarekah)), ""));
 						if (!w_d_d.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[230], w_d_d, String.valueOf(w_d_d_num), String.valueOf(round(tarekahMultiply(w_d_d, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[230], w_d_d, String.valueOf(w_d_d_num), round(tarekahMultiply(w_d_d, tarekah)), ""));
 
 						// Version 2.4
 						if (!w_f.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[238], w_f, String.valueOf(w_f_num), String.valueOf(round(tarekahMultiply(w_f, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[238], w_f, String.valueOf(w_f_num), round(tarekahMultiply(w_f, tarekah)), ""));
 						if (!w_m.equals("0/1"))
-							resultsDataVector.addElement(new ResultsData(translations[237], w_m, String.valueOf(w_m_num), String.valueOf(round(tarekahMultiply(w_m, tarekah))), ""));
+							resultsDataVector.addElement(new ResultsData(translations[237], w_m, String.valueOf(w_m_num), round(tarekahMultiply(w_m, tarekah)), ""));
 					}
 
 					if (bondmanCaseSelected) break;
@@ -7694,181 +7694,181 @@ class MawarethSystem extends JDesktopPane
 
 					if (!h[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[125], h[y], String.valueOf(h_num[y]), String.valueOf(round(tarekahMultiply(h[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[125], h[y], String.valueOf(h_num[y]), round(tarekahMultiply(h[y], tarekah)), ""));
 						noteVector.add(h_note[y]);
 					}
 					if (!w[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[126], w[y], String.valueOf(w_num[y]), String.valueOf(round(tarekahMultiply(w[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[126], w[y], String.valueOf(w_num[y]), round(tarekahMultiply(w[y], tarekah)), ""));
 						noteVector.add(w_note[y]);
 					}
 					if (!a_f_m[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[127], a_f_m[y], String.valueOf(a_f_m_num[y]), String.valueOf(round(tarekahMultiply(a_f_m[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[127], a_f_m[y], String.valueOf(a_f_m_num[y]), round(tarekahMultiply(a_f_m[y], tarekah)), ""));
 						noteVector.add(a_f_m_note[y]);
 					}
 					if (!a_f_f_m[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[128], a_f_f_m[y], String.valueOf(a_f_f_m_num[y]), String.valueOf(round(tarekahMultiply(a_f_f_m[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[128], a_f_f_m[y], String.valueOf(a_f_f_m_num[y]), round(tarekahMultiply(a_f_f_m[y], tarekah)), ""));
 						noteVector.add(a_f_f_m_note[y]);
 					}
 					if (!a_f_m_f[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[129], a_f_m_f[y], String.valueOf(a_f_m_f_num[y]), String.valueOf(round(tarekahMultiply(a_f_m_f[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[129], a_f_m_f[y], String.valueOf(a_f_m_f_num[y]), round(tarekahMultiply(a_f_m_f[y], tarekah)), ""));
 						noteVector.add(a_f_m_f_note[y]);
 					}
 					if (!a_f_m_m[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[130], a_f_m_m[y], String.valueOf(a_f_m_m_num[y]), String.valueOf(round(tarekahMultiply(a_f_m_m[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[130], a_f_m_m[y], String.valueOf(a_f_m_m_num[y]), round(tarekahMultiply(a_f_m_m[y], tarekah)), ""));
 						noteVector.add(a_f_m_m_note[y]);
 					}
 					if (!a_m_f_m[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[131], a_m_f_m[y], String.valueOf(a_m_f_m_num[y]), String.valueOf(round(tarekahMultiply(a_m_f_m[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[131], a_m_f_m[y], String.valueOf(a_m_f_m_num[y]), round(tarekahMultiply(a_m_f_m[y], tarekah)), ""));
 						noteVector.add(a_m_f_m_note[y]);
 					}
 					if (!a_d_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[132], a_d_d[y], String.valueOf(a_d_d_num[y]), String.valueOf(round(tarekahMultiply(a_d_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[132], a_d_d[y], String.valueOf(a_d_d_num[y]), round(tarekahMultiply(a_d_d[y], tarekah)), ""));
 						noteVector.add(a_d_d_note[y]);
 					}
 					if (!a_s_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[133], a_s_d[y], String.valueOf(a_s_d_num[y]), String.valueOf(round(tarekahMultiply(a_s_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[133], a_s_d[y], String.valueOf(a_s_d_num[y]), round(tarekahMultiply(a_s_d[y], tarekah)), ""));
 						noteVector.add(a_s_d_note[y]);
 					}
 					if (!a_s_d_s[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[134], a_s_d_s[y], String.valueOf(a_s_d_s_num[y]), String.valueOf(round(tarekahMultiply(a_s_d_s[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[134], a_s_d_s[y], String.valueOf(a_s_d_s_num[y]), round(tarekahMultiply(a_s_d_s[y], tarekah)), ""));
 						noteVector.add(a_s_d_s_note[y]);
 					}
 					if (!a_d_d_s[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[135], a_d_d_s[y], String.valueOf(a_d_d_s_num[y]), String.valueOf(round(tarekahMultiply(a_d_d_s[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[135], a_d_d_s[y], String.valueOf(a_d_d_s_num[y]), round(tarekahMultiply(a_d_d_s[y], tarekah)), ""));
 						noteVector.add(a_d_d_s_note[y]);
 					}
 					if (!a_s_d_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[136], a_s_d_d[y], String.valueOf(a_s_d_d_num[y]), String.valueOf(round(tarekahMultiply(a_s_d_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[136], a_s_d_d[y], String.valueOf(a_s_d_d_num[y]), round(tarekahMultiply(a_s_d_d[y], tarekah)), ""));
 						noteVector.add(a_s_d_d_note[y]);
 					}
 					if (!a_d_d_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[137], a_d_d_d[y], String.valueOf(a_d_d_d_num[y]), String.valueOf(round(tarekahMultiply(a_d_d_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[137], a_d_d_d[y], String.valueOf(a_d_d_d_num[y]), round(tarekahMultiply(a_d_d_d[y], tarekah)), ""));
 						noteVector.add(a_d_d_d_note[y]);
 					}
 					if (!a_s_s_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[138], a_s_s_d[y], String.valueOf(a_s_s_d_num[y]), String.valueOf(round(tarekahMultiply(a_s_s_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[138], a_s_s_d[y], String.valueOf(a_s_s_d_num[y]), round(tarekahMultiply(a_s_s_d[y], tarekah)), ""));
 						noteVector.add(a_s_s_d_note[y]);
 					}
 					if (!a_d_s_d[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[139], a_d_s_d[y], String.valueOf(a_d_s_d_num[y]), String.valueOf(round(tarekahMultiply(a_d_s_d[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[139], a_d_s_d[y], String.valueOf(a_d_s_d_num[y]), round(tarekahMultiply(a_d_s_d[y], tarekah)), ""));
 						noteVector.add(a_d_s_d_note[y]);
 					}
 					if (!a_s_mb[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[140], a_s_mb[y], String.valueOf(a_s_mb_num[y]), String.valueOf(round(tarekahMultiply(a_s_mb[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[140], a_s_mb[y], String.valueOf(a_s_mb_num[y]), round(tarekahMultiply(a_s_mb[y], tarekah)), ""));
 						noteVector.add(a_s_mb_note[y]);
 					}
 					if (!a_d_mb[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[141], a_d_mb[y], String.valueOf(a_d_mb_num[y]), String.valueOf(round(tarekahMultiply(a_d_mb[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[141], a_d_mb[y], String.valueOf(a_d_mb_num[y]), round(tarekahMultiply(a_d_mb[y], tarekah)), ""));
 						noteVector.add(a_d_mb_note[y]);
 					}
 					if (!a_s_msister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[142], a_s_msister[y], String.valueOf(a_s_msister_num[y]), String.valueOf(round(tarekahMultiply(a_s_msister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[142], a_s_msister[y], String.valueOf(a_s_msister_num[y]), round(tarekahMultiply(a_s_msister[y], tarekah)), ""));
 						noteVector.add(a_s_msister_note[y]);
 					}
 					if (!a_d_msister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[143], a_d_msister[y], String.valueOf(a_d_msister_num[y]), String.valueOf(round(tarekahMultiply(a_d_msister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[143], a_d_msister[y], String.valueOf(a_d_msister_num[y]), round(tarekahMultiply(a_d_msister[y], tarekah)), ""));
 						noteVector.add(a_d_msister_note[y]);
 					}
 					if (!a_d_b[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[144], a_d_b[y], String.valueOf(a_d_b_num[y]), String.valueOf(round(tarekahMultiply(a_d_b[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[144], a_d_b[y], String.valueOf(a_d_b_num[y]), round(tarekahMultiply(a_d_b[y], tarekah)), ""));
 						noteVector.add(a_d_b_note[y]);
 					}
 					if (!a_s_sister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[145], a_s_sister[y], String.valueOf(a_s_sister_num[y]), String.valueOf(round(tarekahMultiply(a_s_sister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[145], a_s_sister[y], String.valueOf(a_s_sister_num[y]), round(tarekahMultiply(a_s_sister[y], tarekah)), ""));
 						noteVector.add(a_s_sister_note[y]);
 					}
 					if (!a_d_sister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[146], a_d_sister[y], String.valueOf(a_d_sister_num[y]), String.valueOf(round(tarekahMultiply(a_d_sister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[146], a_d_sister[y], String.valueOf(a_d_sister_num[y]), round(tarekahMultiply(a_d_sister[y], tarekah)), ""));
 						noteVector.add(a_d_sister_note[y]);
 					}
 					if (!a_d_fb[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[147], a_d_fb[y], String.valueOf(a_d_fb_num[y]), String.valueOf(round(tarekahMultiply(a_d_fb[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[147], a_d_fb[y], String.valueOf(a_d_fb_num[y]), round(tarekahMultiply(a_d_fb[y], tarekah)), ""));
 						noteVector.add(a_d_fb_note[y]);
 					}
 					if (!a_s_fsister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[148], a_s_fsister[y], String.valueOf(a_s_fsister_num[y]), String.valueOf(round(tarekahMultiply(a_s_fsister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[148], a_s_fsister[y], String.valueOf(a_s_fsister_num[y]), round(tarekahMultiply(a_s_fsister[y], tarekah)), ""));
 						noteVector.add(a_s_fsister_note[y]);
 					}
 					if (!a_d_fsister[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[149], a_d_fsister[y], String.valueOf(a_d_fsister_num[y]), String.valueOf(round(tarekahMultiply(a_d_fsister[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[149], a_d_fsister[y], String.valueOf(a_d_fsister_num[y]), round(tarekahMultiply(a_d_fsister[y], tarekah)), ""));
 						noteVector.add(a_d_fsister_note[y]);
 					}
 					if (!a_ul[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[150], a_ul[y], String.valueOf(a_ul_num[y]), String.valueOf(round(tarekahMultiply(a_ul[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[150], a_ul[y], String.valueOf(a_ul_num[y]), round(tarekahMultiply(a_ul[y], tarekah)), ""));
 						noteVector.add(a_ul_note[y]);
 					}
 					if (!a_kl[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[151], a_kl[y], String.valueOf(a_kl_num[y]), String.valueOf(round(tarekahMultiply(a_kl[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[151], a_kl[y], String.valueOf(a_kl_num[y]), round(tarekahMultiply(a_kl[y], tarekah)), ""));
 						noteVector.add(a_kl_note[y]);
 					}
 					if (!a_k[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[152], a_k[y], String.valueOf(a_k_num[y]), String.valueOf(round(tarekahMultiply(a_k[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[152], a_k[y], String.valueOf(a_k_num[y]), round(tarekahMultiply(a_k[y], tarekah)), ""));
 						noteVector.add(a_k_note[y]);
 					}
 					if (!a_s_ul[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[153], a_s_ul[y], String.valueOf(a_s_ul_num[y]), String.valueOf(round(tarekahMultiply(a_s_ul[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[153], a_s_ul[y], String.valueOf(a_s_ul_num[y]), round(tarekahMultiply(a_s_ul[y], tarekah)), ""));
 						noteVector.add(a_s_ul_note[y]);
 					}
 					if (!a_d_ul[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[154], a_d_ul[y], String.valueOf(a_d_ul_num[y]), String.valueOf(round(tarekahMultiply(a_d_ul[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[154], a_d_ul[y], String.valueOf(a_d_ul_num[y]), round(tarekahMultiply(a_d_ul[y], tarekah)), ""));
 						noteVector.add(a_d_ul_note[y]);
 					}
 					if (!a_d_u[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[155], a_d_u[y], String.valueOf(a_d_u_num[y]), String.valueOf(round(tarekahMultiply(a_d_u[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[155], a_d_u[y], String.valueOf(a_d_u_num[y]), round(tarekahMultiply(a_d_u[y], tarekah)), ""));
 						noteVector.add(a_d_u_note[y]);
 					}
 					if (!a_s_kl[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[156], a_s_kl[y], String.valueOf(a_s_kl_num[y]), String.valueOf(round(tarekahMultiply(a_s_kl[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[156], a_s_kl[y], String.valueOf(a_s_kl_num[y]), round(tarekahMultiply(a_s_kl[y], tarekah)), ""));
 						noteVector.add(a_s_kl_note[y]);
 					}
 					if (!a_d_kl[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[157], a_d_kl[y], String.valueOf(a_d_kl_num[y]), String.valueOf(round(tarekahMultiply(a_d_kl[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[157], a_d_kl[y], String.valueOf(a_d_kl_num[y]), round(tarekahMultiply(a_d_kl[y], tarekah)), ""));
 						noteVector.add(a_d_kl_note[y]);
 					}
 					if (!a_d_k[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[158], a_d_k[y], String.valueOf(a_d_k_num[y]), String.valueOf(round(tarekahMultiply(a_d_k[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[158], a_d_k[y], String.valueOf(a_d_k_num[y]), round(tarekahMultiply(a_d_k[y], tarekah)), ""));
 						noteVector.add(a_d_k_note[y]);
 					}
 					if (!a_s_k[y].equals("0/1"))
 					{
-						resultsDataVector.addElement(new ResultsData(translations[159], a_s_k[y], String.valueOf(a_s_k_num[y]), String.valueOf(round(tarekahMultiply(a_s_k[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[159], a_s_k[y], String.valueOf(a_s_k_num[y]), round(tarekahMultiply(a_s_k[y], tarekah)), ""));
 						noteVector.add(a_s_k_note[y]);
 					}
 					if (!muslim_trusts[y].equals("0/1"))
-						resultsDataVector.addElement(new ResultsData(translations[160], muslim_trusts[y], "", String.valueOf(round(tarekahMultiply(muslim_trusts[y], tarekah))), ""));
+						resultsDataVector.addElement(new ResultsData(translations[160], muslim_trusts[y], "", round(tarekahMultiply(muslim_trusts[y], tarekah)), ""));
 				}
 				resultsDataVector.addElement(new ResultsData("", "", "", "", ""));
 
@@ -7893,7 +7893,7 @@ class MawarethSystem extends JDesktopPane
 			}
 
 			// This is only to display the amount of tarekah
-			resultsDataVector.addElement(new ResultsData("", "", "", "<html><div style='color:red;white-space:pre;'>" + tarekah, ""));
+			resultsDataVector.addElement(new ResultsData("", "", "", "<html><div style='color:red;white-space:pre;'>" + round(tarekah), ""));
 
 			// Version 1.3
 			for (int i = noteVector.size(); i < resultsDataVector.size(); i++)
@@ -12783,12 +12783,12 @@ class MawarethSystem extends JDesktopPane
 			return HTMLTextUpdate;
 	}
 
-	// Version 1.1, This function is used to set the precesion of the double in displaying the results.
-	static double round(final double num)
+	// Version 1.1, This function is used to set the precision of the double in displaying the results.
+	static String round(final double num)
 	{
 		BigDecimal val = new BigDecimal(num);
-		val = val.setScale(3, RoundingMode.DOWN);
-		return val.doubleValue();
+		val = val.setScale(2, RoundingMode.DOWN);
+		return val.toPlainString();
 	}
 
 	// Version 1.1, This function is used to work as setEnabled(false) for JPanel since it has a problem.
