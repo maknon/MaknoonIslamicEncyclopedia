@@ -2009,7 +2009,7 @@ class MawarethSystem extends JDesktopPane
 	private boolean allMadaheb = false;
 
 	// Version 1.8/2.0, Adding Arham case under late Shafee & Maliki scholars
-	private JCheckBoxMenuItem arhamChoiceCheckBox;
+	private JCheckBox arhamChoiceCheckBox;
 
 	class SpecialCasesInterface extends JInternalFrame
 	{
@@ -2058,7 +2058,7 @@ class MawarethSystem extends JDesktopPane
 			specialFrameMainPanel.add(arhamChoicePanel);
 			arhamChoicePanel.add(specialFrameRadioButton[0], BorderLayout.CENTER);
 
-			arhamChoiceCheckBox = new JCheckBoxMenuItem(translations[2]);
+			arhamChoiceCheckBox = new JCheckBox(translations[2]);
 			arhamChoiceCheckBox.setOpaque(false);
 			arhamChoiceCheckBox.setEnabled(false);
 			if (MaknoonIslamicEncyclopedia.language) arhamChoicePanel.add(arhamChoiceCheckBox, BorderLayout.WEST);
@@ -12106,14 +12106,14 @@ class MawarethSystem extends JDesktopPane
 				if (a_s_kl_num[cnt] > 0 || a_d_kl_num[cnt] > 0 || a_s_k_num[cnt] > 0 || a_d_k_num[cnt] > 0)
 					m_num[cnt] = 1;
 
-			// Hausbend cases
+			// Husband cases
 			if (h_num[cnt] == 1)
 			{
 				h[cnt] = "1/2";
 				h_note[cnt] = translations[0];
 			}
 
-			// Wifes cases
+			// Wife cases
 			if (w_num[cnt] >= 1)
 			{
 				w[cnt] = "1/4";
