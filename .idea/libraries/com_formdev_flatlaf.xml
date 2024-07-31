@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.formdev:flatlaf" type="repository">
-    <properties maven-id="com.formdev:flatlaf:2.3" />
+    <properties maven-id="com.formdev:flatlaf:3.5" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/formdev/flatlaf/2.3/flatlaf-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/formdev/flatlaf/3.5/flatlaf-3.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
