@@ -1,0 +1,239 @@
+ [Blood Relatives are not inheritors]
+Results
+Special case: Al-Omareya
+Special case: Al-Masaalah Al-Moshtarakah
+Special case: Al-Masaalah Al-Akdareya
+Special case: Al-Masaalah Al-Denareyah Al-soukrah
+Special case: Al-Masaalah Al-Denareyah Al-koubrah
+Special case: Al-Masaalah Al-kharqaa
+Special case: Al-Masaalah Al-Menbareia
+Special case: Al-Masaalah Al-Ashreia
+Special case: Al-Masaalah Al-Ashreneia
+Special case: Mokhtasarat Zayd
+Special case: Teseeneiat Zayd
+Special case: That Al-Forokh
+Special case: Al-mobahalh
+Special case: Al-Yatematan
+Special case: Am Al-Aramel
+Special case: Al-Malikia
+Special case: Shebah Al-Malikia
+No inheritors, all goes to Muslim trusts
+The case after correction is : 
+ and is changed to : 
+ and after correction is : 
+The base is : 
+ and after correction is : 
+Error!
+bondman
+No inheritors
+ and missing inheritor 
+Epicene (Hermaphrodite) when it is: 
+Son
+Daughter
+GrandSon
+GrandDaughter
+Son of GrandSon
+Daughter of GrandSon
+Brother
+Sister
+Maternal Brother
+Maternal Sister
+Paternal Brother
+Paternal Sister
+Son of Full Brother
+Son of Paternal Brother
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brother
+Son of Paternal Uncle
+Epicene (Hermaphrodite) when it is: 
+Daughter
+Son
+GrandDaughter
+GrandSon
+Daughter of GrandSon
+Son of GrandSon
+Sister
+Brother
+Maternal Sister
+Maternal Brother
+Paternal Sister
+Paternal Brother
+Nothing, because he will not be an inheritor when he is female:
+Epicene (Hermaphrodite) as not male or female
+Haml when it is male i.e. 
+Son
+GrandSon
+Son of GrandSon
+Brother
+Maternal Brother
+Paternal Brother
+Son of Full Brother
+Son of Paternal Brother
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brother
+Son of Paternal Uncle
+Haml when it is femal i.e. 
+Daughter
+GrandDaughter
+Daughter of GrandSon
+Sister
+Maternal Sister
+Paternal Sister
+Not inheritor
+Haml in the final case
+The case when the missing person is alive
+The case when the missing person is NOT alive
+The Final case when the person is missing
+Under gumhour madhab
+Under maliki madhab
+Under hanbali madhab
+Under shafee madhab
+Under hanafi madhab
+Husband
+Wifes
+Father
+GrandFather
+Mother
+Mom's Mom
+Father's Mom
+Mom of Mom's Mom
+Mom of Father's Mom
+Mom of Father's Father
+Son
+Daughter
+GrandSon
+GrandDaughter
+Son of GrandSon
+Daughter of GrandSon
+Brother
+Sister
+Maternal Brother
+Maternal Sister
+Paternal Brother
+Paternal Sister
+Son of Full Brothers
+Son of Paternal Brothers
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brothers
+Son of Paternal Uncles
+Epicene (Hermaphrodite)
+missing person
+haml
+Muslim Trusts
+Husband
+Wifes
+Mom's Father
+Father of Mom's Father
+Father of Father's Mom
+Father of Mom's Mom
+Mom of Mom's Father
+daughter's daughter
+daughter's Son
+Son of GrandDaughters
+Daughter of GrandDaughters
+Son of daughter's daughter
+Daughter of daughter's daughter
+Son of daughter's Son
+Daughter of daughter's Son
+Son of Maternal Brother
+Daughter of Maternal Brother
+Son of Maternal Sister
+Daughter of Maternal Sister
+Daughter of Full Brother
+Son of Full Sister
+Daughter of Full Sister
+Daughter of Paternal Brother
+Son of Paternal Sisters
+Daughter of Paternal Sisters
+(Full, Paternal or Maternal) paternal aunt
+(Full, Paternal or Maternal) maternal aunt
+(Full, Paternal or Maternal) maternal uncle
+Son of (Full, Paternal or Maternal) paternal aunt
+Daughter of (Full, Paternal or Maternal) paternal aunt
+Daughter of Full or paternal uncle
+Son of (Full, Paternal or Maternal) maternal aunt
+Daughter of (Full, Paternal or Maternal) maternal aunt
+Daughter of (Full, Paternal or Maternal) maternal uncle
+Son of (Full, Paternal or Maternal) maternal uncle
+Muslim Trusts
+Hausbend
+Wife
+Father
+GrandFather
+Mother
+Mom's Mom
+Father's Mom
+Mom of Mom's Mom
+Mom of Father's Mom
+Mom of Father's Father
+Son
+Daughter
+GrandSon
+GrandDaughter
+Son of GrandSon
+Daughter of GrandSon
+Brother
+Sister
+Maternal Brother
+Maternal Sister
+Paternal Brother
+Paternal Sister
+Son of Full Brother
+Son of Paternal Brother
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brother
+Son of Paternal Uncle
+ is dead from the layer : 
+ and left with:-
+The base of the original case is: 
+Print
+All selected inheritors (their numbers)
+ with haml may come 
+Son Or Daughter
+GrandSon Or GrandDaughter
+Son of GrandSon Or Daughter of GrandSon
+Brother Or Sister
+Maternal Brother Or Maternal Sister
+Paternal Brother Or Paternal Sister
+Son of Full Brother
+Son of Paternal Brother
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brother
+Son of Paternal Uncle
+ and khontha (Hermaphrodite) 
+Inherators' Names
+Inherators
+Inherator amount
+Inheratance
+Mowqof
+GrandSon [by Obligatory Bequest]
+GrandDaughter [by Obligatory Bequest]
+Haml when it is dead
+Haml when it is male & female
+Haml when it is 2 males
+Haml when it is 2 females
+Haml when it is 4 males
+haml when it is 4 females
+No mirath till haml finished
+Inherators
+Inherator amount
+Inherators number
+Inheratance
+Mowqof
+Print Results 
+Detailed Print
+Daughter's Son [by Obligatory Bequest]
+Daughter's Daughter [by Obligatory Bequest]
+No mirath till haml finished
+Haml may come 
+Missing inheritor 
+Khontha (Hermaphrodite)
+Mother of the son who dead first [by Obligatory Bequest]
+Father of the son who dead first  [by Obligatory Bequest]
+Mother of the daughter who dead first [by Obligatory Bequest]
+Father of the daughter who dead first  [by Obligatory Bequest]

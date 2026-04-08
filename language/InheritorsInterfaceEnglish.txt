@@ -1,0 +1,32 @@
+ Father
+ GrandFather
+ Mother
+ Mom's Mom
+ Father's Mom
+ Mom of Mom's Mom
+ Mom of Father's Mom
+ Mom of Father's Father
+ Wife
+ Husband
+ Son
+ Daughter
+ GrandSon
+ GrandDaughter
+ Son of GrandSon
+ Daughter of GrandSon
+ Maternal Brother
+ Maternal Sister
+ Full Brother
+ Full Sister
+ Paternal Brother
+ Paternal Sister
+ Son of Full Brother
+ Son of Paternal Brother
+ Father's Full Brother
+ Paternal Uncle
+ Son of Father's Full Brother
+ Son of Paternal Uncle
+Inheritors
+Enter
+Yes
+No

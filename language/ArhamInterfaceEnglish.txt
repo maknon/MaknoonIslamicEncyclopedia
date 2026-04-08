@@ -1,0 +1,37 @@
+ Mom's Father
+ Father of Father's Mom
+ Father of Mom's Mom
+ Father of Mom's Father
+ Mom's Father's Mom
+ Daughter's daughter
+ Daughter's Son
+ Son of GrandDaughter
+ Daughter of GrandDaughter
+ Son of Daughter's daughter
+ Daughter of Daughter's daughter
+ Son of Daughter's Son
+ Daughter of Daughter's Son
+ Daughter of Full Brother
+ Son of Full Sister
+ Daughter of Full Sister
+ Daughter of Paternal Brother
+ Son of Paternal Sister
+ Daughter of Paternal Sister
+ Son of Maternal Brother
+ Daughter of Maternal Brother
+ Son of Maternal Sister
+ Daughter of Maternal Sister
+ (Full, Paternal or Maternal) paternal aunt
+ (Full, Paternal or Maternal) maternal aunt
+ (Full, Paternal or Maternal) maternal uncle
+ Daughter of (Full or paternal) uncle
+ Son of (Full, Paternal or Maternal) paternal aunt
+ Daughter of (Full, Paternal or Maternal) paternal aunt
+ Son of(Full, Paternal or Maternal) maternal uncle
+ Daughter of (Full, Paternal or Maternal) maternal uncle
+ Son of Full paternal aunt
+ Daughter of Full paternal aunt
+Relative Maternal
+Enter
+Yes
+No

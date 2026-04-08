@@ -1,0 +1,34 @@
+Husband
+Wife
+Father
+Mother
+Mom's Mom
+Father's Mom
+Mom's Mom's Mom
+Father's Mom's Mom
+Father's Father's Mom
+GrandFather
+Son
+Daughter
+GrandSon
+GrandDaughter
+Son of GrandSon
+Daughter of GrandSon
+Brother
+Sister
+Maternal Brother
+Maternal Sister
+Paternal Brother
+Paternal Sister
+Son of Full Brother
+Son of Paternal Brother
+Father's Full Brother
+Paternal Uncle
+Son of Father's Full Brother
+Son of Paternal Uncle
+Who is missing ?
+Enter
+You didn't select anything, Please select one.
+Warning
+Yes
+Missing Inheritor

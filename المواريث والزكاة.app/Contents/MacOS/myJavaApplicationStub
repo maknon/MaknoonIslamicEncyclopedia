@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd "$(dirname "${0}")" || exit 1
+
+# Inspired by:
+# at http://stackoverflow.com/a/17546508/1128689
+# https://github.com/tofi86/universalJavaApplicationStub
+
+exec ../Java/startup.sh

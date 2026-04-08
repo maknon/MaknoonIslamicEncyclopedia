@@ -1,0 +1,18 @@
+Jumhor
+Maliki
+Hanbali
+Shafee
+Hanafi
+ALL Schools
+Male
+Female
+Number of monasakha case layers: 
+Enter
+Display Inheritors
+Yes
+No
+Under What school you want to calculate the inheritance
+Gender
+Setting (for monasakha case only)
+Do you want to estimate the inheritance?
+General Setting
